@@ -14,9 +14,44 @@
     <title></title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
 
-    <p>It is a lovely day in Lexington.</p>
+    <div id="calc-container" class="mt-5">
+        <div class="row">
+            <p class="col text-right" id="display">0</p>
+        </div>
+        <div class="row">
+            <p class="col-3" onclick="clear_display()">C</p>
+            <p class="col-3">&nbsp;</p>
+            <p class="col-3">&nbsp;</p>
+            <p class="col-3" onclick="operator('/')">/</p>
+        </div>
+        <div class="row">
+            <p class="col-3" onclick="input(7)">7</p>
+            <p class="col-3" onclick="input(8)">8</p>
+            <p class="col-3" onclick="input(9)">9</p>
+            <p class="col-3" onclick="operator('x')">x</p>
+        </div>
+        <div class="row">
+            <p class="col-3" onclick="input(4)">4</p>
+            <p class="col-3" onclick="input(5)">5</p>
+            <p class="col-3" onclick="input(6)">6</p>
+            <p class="col-3" onclick="operator('-')">-</p>
+        </div>
+        <div class="row">
+            <p class="col-3" onclick="input(1)">1</p>
+            <p class="col-3" onclick="input(2)">2</p>
+            <p class="col-3" onclick="input(3)">3</p>
+            <p class="col-3" onclick="operator('+')">+</p>
+        </div>
+        <div class="row">
+            <p class="col-3" onclick="input(0)">0</p>
+            <p class="col-3">&nbsp;</p>
+            <p class="col-3" onclick="input('.')">.</p>
+            <p class="col-3" onclick="calculate()">=</p>
+        </div>
+    </div>
+    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

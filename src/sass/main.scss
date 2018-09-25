@@ -3,8 +3,19 @@
 // Variables for Bootstrap that we want to change
 
 
-$body-bg: #ccc;
 
 
 // Import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+#calc-container {
+    width: 50%;
+    margin:auto;
+    p {
+        text-align:center;
+        border: 1px solid black;
+        margin: 0;
+        padding: 0;
+        height:100px
+    }
+}
