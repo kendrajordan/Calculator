@@ -1,10 +1,18 @@
 // This is the Sass file we edit
 
 // Variables for Bootstrap that we want to change
-
-
-$body-bg: #ccc;
-
+html,body{
+  margin:0;
+  padding:0;
+}
+.container{
+  border: 3px black solid;
+  margin:0;
+  padding: 0;
+}
+input{
+  border: 3px red soild;
+}
 
 // Import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";

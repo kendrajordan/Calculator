@@ -1,7 +1,8 @@
 // This is the JavaScript file we edit
 
-let test = () => {
-    console.log("This is a test.");
-}
 
-var test2 = "123";
+
+function calculate(){
+   let value=document.getElementsById("value");
+   console.log(value);
+}
