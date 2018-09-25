@@ -1,7 +1,18 @@
 // This is the JavaScript file we edit
 
-let test = () => {
-    console.log("This is a test.");
+
+
+
+var holding = []
+
+function sevenf() {
+  var seven = document.getElementById('seven');
+  console.log(seven.value);
+  holding.push(parseInt(seven.value));
+  console.log(holding);
 }
 
-var test2 = "123";
+function eightf() {
+
+
+}

@@ -1,8 +1,13 @@
 "use strict";
 
 // This is the JavaScript file we edit
-var test = function test() {
-  console.log("This is a test.");
-};
+var holding = [];
 
-var test2 = "123";
+function sevenf() {
+  var seven = document.getElementById('seven');
+  console.log(seven.value);
+  holding.push(parseInt(seven.value));
+  console.log(holding);
+}
+
+function eightf() {}
