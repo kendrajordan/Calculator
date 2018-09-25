@@ -6,15 +6,17 @@
     "scripts": {
         "sass": "./node_modules/.bin/sass --watch src/sass/main.scss dist/css/main.css",
         "browser-sync": "./node_modules/.bin/browser-sync start --server 'dist' --files 'dist'",
-        "babel": "./node_modules/.bin/babel src/js --out-dir dist/js --watch"
+        "babel": "./node_modules/.bin/babel src/js --out-dir dist/js --watch",
+        "copy": "./node_modules/.bin/cpx \"src/**/*.html\" dist --watch"
     },
     "devDependencies": {
-        "bootstrap": "^4.1.3",
-        "browser-sync": "^2.24.7",
-        "sass": "^1.14.0",
         "@babel/cli": "^7.1.0",
         "@babel/core": "^7.1.0",
-        "@babel/preset-env": "^7.1.0"
+        "@babel/preset-env": "^7.1.0",
+        "bootstrap": "^4.1.3",
+        "browser-sync": "^2.24.7",
+        "cpx": "^1.5.0",
+        "sass": "^1.14.0"
     },
     "dependencies": {
         "@babel/polyfill": "^7.0.0"
