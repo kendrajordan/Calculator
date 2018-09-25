@@ -1,7 +1,8 @@
 // This is the JavaScript file we edit
 
 let display = document.getElementById('display');
-let first_num, second_num;
+let first_num=null;
+let second_num=null;
 let state = 'ready';
 let sign;
 
@@ -15,7 +16,7 @@ function input(digit) {
     } else {
 
         if (display.innerHTML === '0') {
-            display.innerHTML = digit;    
+            display.innerHTML = digit;
         } else {
             display.innerHTML += digit;
         }
@@ -28,15 +29,38 @@ function clear_display() {
 }
 
 function operator(current_sign) {
-    first_num = parseFloat(display.innerHTML);
-    console.log('first_num:', first_num);
-    state = 'ready_second';
-    sign = current_sign;
+    if (first_num=null) {
+      first_num = parseFloat(display.innerHTML);
+      state = 'ready_second';
+      sign = current_sign;
+  }
+
+    else {
+      second_num=parseFloat(display.innerHTML);
+      first_num=calculate ();
+      state = 'ready_second';
+      sign= current_sign;
+    }
+
+
 }
 
 function calculate() {
     second_num = parseFloat(display.innerHTML);
     let solution;
+    let temp_first=first_num.toString();
+    let temp_second=second_num.toString();
+    //temp_first=temp_first.substring(temp_first.search(/\./)).length;
+    temp_first=temp_first.substring(temp_first.search(/\./) + 1).length;
+    temp_second=temp_second.substring(temp_second.search(/\./) + 1).length;
+    let dec_places;
+
+    if (temp_first>temp_second) {
+      dec_places=temp_first;
+    }else {
+      dec_places=temp_second;
+    }
+
 
     if (sign === '/') {
         solution = first_num / second_num;
@@ -48,7 +72,9 @@ function calculate() {
         solution = first_num + second_num;
     }
 
-    display.innerHTML = solution;
-    state = 'solved';
-}
 
+    display.innerHTML = solution.toFixed(dec_places);
+    state = 'solved';
+
+    return solution.toFixed(dec_places);
+}
