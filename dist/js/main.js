@@ -6,3 +6,5 @@ var test = function test() {
 };
 
 var test2 = "123";
+
+function calculate() {}

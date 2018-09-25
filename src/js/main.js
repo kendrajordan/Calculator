@@ -5,3 +5,7 @@ let test = () => {
 }
 
 var test2 = "123";
+
+function calculate() {
+  
+}
