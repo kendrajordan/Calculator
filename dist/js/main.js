@@ -4,3 +4,5 @@
 var test = function test() {
   console.log("This is a test.");
 };
+
+var test2 = "123";
