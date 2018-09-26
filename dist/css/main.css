@@ -5,13 +5,39 @@ html, body {
 }
 
 .container {
-  border: 3px black solid;
+  border: 3px green solid;
   margin: 0;
   padding: 0;
 }
 
-input {
-  border: 3px red soild;
+.button-body {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0;
+}
+
+.col-md-3 {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+}
+
+.window {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#display {
+  padding-right: 5px;
 }
 
 /*!
@@ -555,8 +581,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0;
+  padding-left: 0;
   margin-right: auto;
   margin-left: auto;
 }
@@ -583,8 +609,8 @@ pre code {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0;
+  padding-left: 0;
   margin-right: auto;
   margin-left: auto;
 }
@@ -592,8 +618,8 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .no-gutters {
@@ -615,8 +641,8 @@ pre code {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .col {
@@ -4047,21 +4073,21 @@ input[type=button].btn-block {
   flex-direction: column;
 }
 .card-deck .card {
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 @media (min-width: 576px) {
   .card-deck {
     flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: 0;
+    margin-left: 0;
   }
   .card-deck .card {
     display: flex;
     flex: 1 0 0%;
     flex-direction: column;
-    margin-right: 15px;
+    margin-right: 0;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: 0;
   }
 }
 
@@ -4070,7 +4096,7 @@ input[type=button].btn-block {
   flex-direction: column;
 }
 .card-group > .card {
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 @media (min-width: 576px) {
   .card-group {

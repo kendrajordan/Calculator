@@ -15,82 +15,84 @@
   </head>
   <body>
 
-  <div class="container">
+  <div class="container container-body col-md-6">
     <div class="row">
-      <div class="container-fluid">
-        <output id="display"></output>
+      <div class="container-fluid window">
+        <output id="display">0</output>
+      </div>
+    </div>
+    <div class="container-fluid button-body">
+    <div class="row">
+      <div class="col-md-3 ">
+        <button id="reset" onclick="reset()"><span>C</span></button>
+      </div>
+      <div class="col-md-3  ">
+        <button id="recall" onclick="calculate('recall')"><span>Recall</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="space" onclick="calculate(' ')"><span> </span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="divide"  onclick="calculate('/')"><span>/</span></button>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm">
-        <button id="reset" value="document.getElementById("display").reset()" onclick="calculate()"><span>C</span></button>
+      <div class="col-md-3  ">
+          <button id="seven" onclick="calculate('7')"><span>7</span></button>
       </div>
-      <div class="col-sm">
-        <button id="space_a" value=" " onclick="calculate()" value=" "><span> </span></button>
+      <div class="col-md-3  ">
+          <button id="eight" onclick="calculate('8')"><span>8</span></button>
       </div>
-      <div class="col-sm">
-          <button id="space" value=" " onclick="calculate()" value=" "><span> </span></button>
+      <div class="col-md-3  ">
+          <button id="nine" onclick="calculate('9')"><span>9</span></button>
       </div>
-      <div class="col-sm">
-          <button id="divide" value="/" onclick="calculate()" value="/"><span>/</span></button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm">
-          <button id="seven" value="7" onclick="calculate()" value="7"><span>7</span></button>
-      </div>
-      <div class="col-sm">
-          <button id="eight" value="8" onclick="calculate()" value="8"><span>8</span></button>
-      </div>
-      <div class="col-sm">
-          <button id="nine" value="9" onclick="calculate()" value="9"><span>9</span></button>
-      </div>
-      <div class="col-sm">
-          <button id="*" value="*" onclick="calculate()" value="*"><span>*</span></button>
+      <div class="col-md-3  ">
+          <button id="*" onclick="calculate('*')"><span>*</span></button>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm">
-        <button id="four" value="4" onclick="calculate()" value="4"><span>4</span></button>
+      <div class="col-md-3  ">
+        <button id="four"  onclick="calculate('4')"><span>4</span></button>
       </div>
-      <div class="col-sm">
-          <button id="five" value="5" onclick="calculate()" value="5"><span>5</span></button>
+      <div class="col-md-3  ">
+          <button id="five" onclick="calculate('5')"><span>5</span></button>
       </div>
-      <div class="col-sm">
-          <button id="six" value="6" onclick="calculate()" value="6"><span>6</span></button>
+      <div class="col-md-3  ">
+          <button id="six"  onclick="calculate('6')"><span>6</span></button>
       </div>
-      <div class="col-sm">
-          <button id="minus" value="-" onclick="calculate()" value="-"><span>-</span></button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm">
-          <button id="one" value="1" onclick="calculate()"><span>1</span></button>
-      </div>
-      <div class="col-sm">
-          <button id="two" value="2" onclick="calculate()" value="2"><span>2</span></button>
-      </div>
-      <div class="col-sm">
-          <button id="three" value="3" onclick="calculate()" value="3"><span>3</span></button>
-      </div>
-      <div class="col-sm">
-        <button id="plus" value="+" onclick="calculate()" value="+"><span>+</span></button>
+      <div class="col-md-3  ">
+          <button id="minus" onclick="calculate('-')"><span>-</span></button>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm">
-          <button id="zero" value="0" onclick="calculate()" value="0"><span>0</span></button>
+      <div class="col-md-3  ">
+          <button id="one" onclick="calculate('1')"><span>1</span></button>
       </div>
-      <div class="col-sm">
-          <button name="operator" onclick="calculate()" value=" "><span> </span></button>
+      <div class="col-md-3  ">
+          <button id="two" onclick="calculate('2')"><span>2</span></button>
       </div>
-      <div class="col-sm">
-        <button name="operator" onclick="calculate()" value="."><span>.</span></button>
+      <div class="col-md-3  ">
+          <button id="three" onclick="calculate('3')"><span>3</span></button>
       </div>
-      <div class="col-sm">
-          <button name="operator" onclick="calculate()" value="="><span>=</span></button>
+      <div class="col-md-3  ">
+        <button id="plus" onclick="calculate('+')"><span>+</span></button>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-3  ">
+          <button id="zero" onclick="calculate('0')"><span>0</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="space" name="operator" onclick="calculate(' ')" ><span> </span></button>
+      </div>
+      <div class="col-md-3  ">
+        <button id="decimal"name="operator" onclick="calculate('.')" ><span>.</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="equal"name="operator" onclick="calculate('=')"><span>=</span></button>
+      </div>
+    </div>
+  </div>
 </div>
 
 

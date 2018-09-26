@@ -6,12 +6,36 @@ html,body{
   padding:0;
 }
 .container{
-  border: 3px black solid;
+  border: 3px green solid;
   margin:0;
   padding: 0;
 }
-input{
-  border: 3px red soild;
+.button-body{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0;
+}
+.col-md-3{
+display: flex;
+justify-content: center;
+padding:0;
+margin: 0;
+width:100%;
+}
+$grid-gutter-width: 0;
+button{
+  width: 100%;
+}
+
+.window{
+  height:40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#display{
+  padding-right:5px;
 }
 
 // Import bootstrap

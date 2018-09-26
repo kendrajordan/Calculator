@@ -1,38 +1,81 @@
 // This is the JavaScript file we edit
-function calculate(){
-var a = document.getElementById("one").value;
-var b = document.getElementById("two").value;
-var c = document.getElementById("three").value;
-var d = document.getElementById("four").value;
-var e =  document.getElementById("five").value;
-var f =  document.getElementById("six").value;
-var g =  document.getElementById("seven").value;
-var h =  document.getElementById("eight").value;
-var i =  document.getElementById("nine").value;
-var j =  document.getElementById("zero").value;
-var k = document.getElementById("reset").value;
-var l =  document.getElementById("space_a").value;
-var m =  document.getElementById("space").value;
-var n ="";
-console.log(a);
-/*switch (document.getElementById()) {
-  case a :;
-  case b :;
-  case c :;
-  case d :;
-  case e :;
-  case f :;
-  case g :;
-  case h :;
-  case i :;
-  case j :;
-  case k :;
-  case l :;
-  case m :;
-    n+a;
-    break;
-  default:
+let store=[];
+let result=[];
+function calculate(input){
+  switch(input){
+    case "1":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "2":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "3":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "4":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "5":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "6":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "7":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "8":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "9":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "0":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case  "+":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "-":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "*":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "/":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+    case "=" :
+      document.getElementById("display").innerHTML=store.join("");
 
-}*/
-//document.getElementById("display").innerHTML = a;
+      document.getElementById("display").innerHTML=eval(store.join(""));
+      result.push(eval(store.join("")));
+      break;
+    case "recall":
+      document.getElementById("display").innerHTML=result.join(", ");
+      break;
+    case ".":
+      store.push(input);
+      document.getElementById("display").innerHTML=store.join("");
+      break;
+  }
+console.log(store);
+}
+function reset(){
+  store =[];
+  document.getElementById("display").innerHTML=0;
 }
