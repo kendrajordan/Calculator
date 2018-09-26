@@ -146,7 +146,7 @@ function calculate() {
   }
 
 
-  solution = solution / Math.pow(10, dec_places);
+  solution = solution / Math.pow(10, dec_places*2);
 
   // If the number of digits in front of the decimal is too many, throw error
   // Grab the "integer" part of the solution

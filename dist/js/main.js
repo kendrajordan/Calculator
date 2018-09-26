@@ -135,7 +135,7 @@ function calculate() {
     solution = temp_first + temp_second;
   }
 
-  solution = solution / Math.pow(10, dec_places); // If the number of digits in front of the decimal is too many, throw error
+  solution = solution / Math.pow(10, dec_places * 2); // If the number of digits in front of the decimal is too many, throw error
   // Grab the "integer" part of the solution
 
   var temp_str = solution.toString();
