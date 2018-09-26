@@ -11,7 +11,7 @@ var operators = {
 
 var display = document.getElementById('thedisplay');
 
-
+var filled = 0
 
 var holding = [];
 
@@ -23,102 +23,111 @@ var operator = ""
 
 
 function zerof() {
-  if(holding.length == 0){
-    display.innerHTML = " ";
-  }
-
-  holding.push(0);
-  display.innerHTML += "0";
-console.log(holding);
-}
+      if(display.innerHTML == 0 || filled == 1){
+        display.innerHTML = " ";
+        filled = 0
+        }
+        holding.push(0);
+        display.innerHTML += "0";
+        console.log(holding);
+      }
 
 function onef() {
-  if(holding.length == 0){
-    display.innerHTML = " ";
-  }
-  holding.push(1);
-  display.innerHTML += "1";
-console.log(holding);
-}
+      if(display.innerHTML == 0 || filled == 1){
+        display.innerHTML = " ";
+        filled = 0;
+        }
+        holding.push(1);
+        display.innerHTML += "1";
+        console.log(holding);
+      }
 
 
 function twof() {
-  if(holding.length == 0){
-    display.innerHTML = " ";
-  }
-  holding.push(2);
-  display.innerHTML += "2";
-console.log(holding);
-}
+      if(display.innerHTML == 0 || filled == 1){
+        display.innerHTML = " ";
+        filled = 0;
+        }
+        holding.push(2);
+        display.innerHTML += "2";
+        console.log(holding);
+      }
 
 function threef() {
-  if(holding.length == 0){
-    display.innerHTML = " ";
-  }
-  holding.push(3);
-  display.innerHTML += "3";
-console.log(holding);
-}
+      if(display.innerHTML == 0 || filled == 1){
+        display.innerHTML = " ";
+        filled = 0;
+        }
+        holding.push(3);
+        display.innerHTML += "3";
+        console.log(holding);
+      }
 
 function fourf() {
-  if(holding.length == 0){
-    display.innerHTML = " ";
-  }
-  holding.push(4);
-  display.innerHTML += "4";
-console.log(holding);
-}
+      if(display.innerHTML == 0 || filled == 1){
+        display.innerHTML = " ";
+        filled = 0;
+        }
+        holding.push(4);
+        display.innerHTML += "4";
+        console.log(holding);
+      }
 
 function fivef() {
-  if(holding.length == 0){
-    display.innerHTML = " ";
-  }
-  holding.push(5);
-  display.innerHTML += "5";
-console.log(holding);
-}
+    if(display.innerHTML == 0 || filled == 1){
+      display.innerHTML = " ";
+      filled = 0;
+      }
+      holding.push(5);
+      display.innerHTML += "5";
+      console.log(holding);
+    }
 
 function sixf() {
-  if(holding.length == 0){
+  if(display.innerHTML == 0 || filled == 1){
     display.innerHTML = " ";
+    filled = 0;
+    }
+    holding.push(6);
+    display.innerHTML += "6";
+    console.log(holding);
   }
-  holding.push(6);
-  display.innerHTML += "6";
-console.log(holding);
-}
 
 
 function sevenf() {
-  if(holding.length == 0){
-    display.innerHTML = " ";
-  }
-  holding.push(7);
-  display.innerHTML += "7";
-console.log(holding);
-}
+    if(display.innerHTML == 0 || filled == 1){
+      display.innerHTML = " ";
+      filled = 0;
+      }
+      holding.push(7);
+      display.innerHTML += "7";
+      console.log(holding);
+    }
 
 function eightf() {
-  if(holding.length == 0){
+  if(display.innerHTML == 0 || filled == 1){
     display.innerHTML = " ";
+    filled = 0;
+    }
+    holding.push(8);
+    display.innerHTML += "8";
+    console.log(holding);
   }
-  holding.push(8);
-  display.innerHTML += "8";
-console.log(holding);
-}
 
 function ninef() {
-  if(holding.length == 0){
+  if(display.innerHTML == 0 || filled == 1){
     display.innerHTML = " ";
+    filled =0;
   }
   holding.push(9);
   display.innerHTML += "9";
-console.log(holding);
+  console.log(holding);
 }
 
 function add() {
 
   if (firstnum.length != 0){
-    display.innerHTML = " ";
+    display.innerHTML += "+";
     secondnum = holding.join("");
     holding = [];
 
@@ -126,27 +135,24 @@ function add() {
 
     firstnum = operators[operator](firstnum, secondnum);
     console.log(firstnum)
-    display.innerHTML = firstnum;
+  //  display.innerHTML = firstnum;
     operator = "+"
 
   }else{
 
-  display.innerHTML = " ";
+  display.innerHTML += "+";
   operator = "+"
   firstnum = holding.join("");
   holding = [];
 
   firstnum = parseFloat(firstnum);
 }
-  //if (secondnum[0] != ""){
-//    console.log(firstnum + secondnum);
-//  }
-  // grab string, combine it
+
 }
 
 function subtract() {
   if (firstnum.length != 0){
-    display.innerHTML = " ";
+    display.innerHTML += "-";
     secondnum = holding.join("");
     holding = [];
 
@@ -154,11 +160,11 @@ function subtract() {
 
     firstnum = operators[operator](firstnum, secondnum);
     console.log(firstnum)
-    display.innerHTML = firstnum;
+    //display.innerHTML = firstnum;
     operator = "-"
 
   }else{
-  display.innerHTML = " ";
+  display.innerHTML += "-";
   operator = "-"
   firstnum = holding.join("");
   holding = [];
@@ -168,7 +174,7 @@ function subtract() {
 
 function multiply() {
   if (firstnum.length != 0){
-    display.innerHTML = " ";
+    display.innerHTML += "*";
     secondnum = holding.join("");
     holding = [];
 
@@ -176,12 +182,12 @@ function multiply() {
 
     firstnum = operators[operator](firstnum, secondnum);
     console.log(firstnum)
-    display.innerHTML = firstnum;
+    //display.innerHTML += firstnum;
     operator = "*"
 
   }else{
 
-  display.innerHTML = " ";
+  display.innerHTML += "*";
   operator = "*"
   firstnum = holding.join("");
   holding = [];
@@ -191,7 +197,7 @@ function multiply() {
 
 function divide() {
   if (firstnum.length != 0){
-    display.innerHTML = " ";
+    display.innerHTML += "/";
     secondnum = holding.join("");
     holding = [];
 
@@ -199,11 +205,11 @@ function divide() {
 
     firstnum = operators[operator](firstnum, secondnum);
     console.log(firstnum)
-    display.innerHTML = firstnum;
+    //display.innerHTML = firstnum;
     operator = "/"
 
   }else{
-  display.innerHTML = " ";
+  display.innerHTML += "/";
   operator = "/"
   firstnum = holding.join("");
   holding = [];
@@ -213,13 +219,15 @@ function divide() {
 }
 
 function equals() {
-  display.innerHTML = " ";
+  display.innerHTML = ""
   secondnum = holding.join("");
   holding = [];
   secondnum = parseFloat(secondnum);
   console.log(operators[operator](firstnum, secondnum));
-  display.innerHTML += operators[operator](firstnum, secondnum);
-
+  display.innerHTML = operators[operator](firstnum, secondnum);
+  filled = 1
+  firstnum = []
+  secondnum = []
 }
 
 function blankitout() {
@@ -232,6 +240,7 @@ function blankitout() {
 
 function decimali() {
   holding.push(".");
+  display.innerHTML += "."
 console.log(holding);
 
 }
