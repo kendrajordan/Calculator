@@ -8614,6 +8614,7 @@ h3 {
   width: 50%;
   margin: auto;
   border: 1px solid black;
+  min-width: 20em;
 }
 #calc-container .row {
   margin: 0;
@@ -8630,6 +8631,7 @@ h3 {
 }
 #calc-container #display {
   cursor: default;
+  font-family: monospace;
 }
 
 /*# sourceMappingURL=main.css.map */
