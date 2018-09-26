@@ -2,7 +2,7 @@
   display: grid;
   /* other necessary CSS */
 }
-.calculator-numbers {
+#operators, #num-button {
   display: grid;
    grid-template-columns: auto auto auto;
   /* other necessary CSS */

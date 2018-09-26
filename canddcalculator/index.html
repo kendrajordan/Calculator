@@ -25,31 +25,34 @@
     <button type="button" class="btn btn-sm">C</button>
     <button type="button" class="btn btn-sm">.</button> -->
 
-    <div class="container calculator-numbers col-sm-6">
+<div class="container calculator-numbers col-sm-6">
           <div id="display" class=”calculator__display”>0</div>
-      <div id="multiply" class="grid-item"><button type="button" class="btn btn-sm">x</button></div>
-      <div id="add" class="grid-item"><button type="button" class="btn btn-sm">+</button></div>
-      <div id="subtract" class="grid-item"><button type="button" class="btn btn-sm">-</button></div>
-      <div id="divide" class="grid-item"><button type="button" class="btn btn-sm">/</button></div>
-      <div id="equal" class="grid-item"><button type="button" class="btn btn-sm">=</button></div>
-      <div id="clear" class="grid-item"><button type="button" class="btn btn-sm">C</button></div>
-      <div id="decimal" class="grid-item"><button type="button" class="btn btn-sm">.</button></div>
+    <div id= "operators" >
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">x</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">+</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">-</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">/</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">=</button></div>
+    </div>
+      <div id="clear" class="grid-item" onclick="calculator(null, 0)"><button type="button" class="btn btn-primary btn-lg">C</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">.</button></div>
 
 <!-- above are the operator keys-->
-
-      <div class="grid-item"><button type="button" class="btn btn-sm">0</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-sm">1</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-sm">2</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-sm">3</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-sm">4</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-sm">5</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-sm">6</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-sm">7</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-sm">8</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-sm">9</button></div>
+    <div id="num-button" >
+      <div id="btn0" class="grid-item" onclick="calculator(0)"><button type="button" class="btn btn-primary btn-lg">0</button></div>
+      <div id="btn1" class="grid-item" onclick="calculator(1)"><button type="button" class="btn btn-primary btn-lg">1</button></div>
+      <div id="btn2" class="grid-item" onclick="calculator(2)"><button type="button" class="btn btn-primary btn-lg">2</button></div>
+      <div id="btn3" class="grid-item" onclick="calculator(3)"><button type="button" class="btn btn-primary btn-lg">3</button></div>
+      <div id="btn4" class="grid-item" onclick="calculator(4)"><button type="button" class="btn btn-primary btn-lg">4</button></div>
+      <div id="btn5" class="grid-item" onclick="calculator(5)"><button type="button" class="btn btn-primary btn-lg">5</button></div>
+      <div id="btn6" class="grid-item" onclick="calculator(6)"><button type="button" class="btn btn-primary btn-lg">6</button></div>
+      <div id="btn7" class="grid-item" onclick="calculator(7)"><button type="button" class="btn btn-primary btn-lg">7</button></div>
+      <div id="btn8" class="grid-item" onclick="calculator(8)"><button type="button" class="btn btn-primary btn-lg">8</button></div>
+      <div id="btn9" class="grid-item" onclick="calculator(9)"><button type="button" class="btn btn-primary btn-lg">9</button></div>
+    </div>
     </div>
 
-  
+
 
 
     <!-- Optional JavaScript -->
