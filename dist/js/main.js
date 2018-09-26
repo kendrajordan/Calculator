@@ -26,30 +26,42 @@ function input(digit) {
 
 function clear_display() {
   display.innerHTML = '0';
+  state = 'ready';
+  first_num = second_num = null;
 }
 
 function operator(current_sign) {
+  
   if (first_num == null) {
     first_num = parseFloat(display.innerHTML);
     state = 'ready_second';
     sign = current_sign;
   } else {
-    second_num = parseFloat(display.innerHTML);
-    first_num = calculate();
+    calculate();
     state = 'ready_second';
     sign = current_sign;
   }
+  console.log('END OF OPERATOR()');
+  console.log('first_num', first_num);
+  console.log('second_num', second_num);
+  console.log('sign', sign);
 }
 
 function calculate() {
   second_num = parseFloat(display.innerHTML);
+  console.log('BEGINNING OF CALCULATE()');
+  console.log('first_num', first_num, typeof first_num);
+  console.log('second_num', second_num, typeof second_num);
+  console.log('sign', sign);
+  
+
   var solution;
   var temp_first = first_num.toString();
   var temp_second = second_num.toString(); //temp_first=temp_first.substring(temp_first.search(/\./)).length;
 
   temp_first = temp_first.substring(temp_first.search(/\./) + 1).length;
   temp_second = temp_second.substring(temp_second.search(/\./) + 1).length;
-  var dec_places;
+  var dec_places = 0;
 
   if (temp_first > temp_second) {
     dec_places = temp_first;
@@ -67,7 +79,17 @@ function calculate() {
     solution = first_num + second_num;
   }
 
-  display.innerHTML = solution.toFixed(dec_places);
+  solution = parseFloat(solution.toFixed(dec_places));
+  display.innerHTML = solution;
   state = 'solved';
-  return solution.toFixed(dec_places);
+
+  first_num = solution;
+  second_num = null;
+  console.log('END OF CALCULATE()');
+  console.log('first_num', first_num, typeof first_num);
+  console.log('second_num', second_num, typeof second_num);
+  console.log('sign', sign);
+  console.log('solution', solution, typeof solution);
+
+  return solution;
 }

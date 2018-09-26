@@ -26,20 +26,22 @@ function input(digit) {
 
 function clear_display() {
     display.innerHTML = '0';
+    state = 'ready';
+    first_num = second_num = null;
 }
 
 function operator(current_sign) {
-    if (first_num=null) {
-      first_num = parseFloat(display.innerHTML);
-      state = 'ready_second';
-      sign = current_sign;
-  }
+    if (first_num == null) {
+        first_num = parseFloat(display.innerHTML);
+        state = 'ready_second';
+        sign = current_sign;
+    }
 
     else {
-      second_num=parseFloat(display.innerHTML);
-      first_num=calculate ();
-      state = 'ready_second';
-      sign= current_sign;
+        second_num=parseFloat(display.innerHTML);
+        first_num=calculate ();
+        state = 'ready_second';
+        sign= current_sign;
     }
 
 
