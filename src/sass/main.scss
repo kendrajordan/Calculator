@@ -1,6 +1,10 @@
 // This is the Sass file we edit
 
 // Variables for Bootstrap that we want to change
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 .container {
   border: 3px black solid;
@@ -8,5 +12,15 @@
   padding: 0;
 }
 
+.button-body {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+button {
+  margin: auto;
+  padding: auto;
+}
 // Import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";

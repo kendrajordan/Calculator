@@ -18,77 +18,79 @@
     <div class="container">
       <div class="row">
         <div class="container-fluid" id="display">
-          <output name="display"></output>
+          <output id="display"></output>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="C" onclick="calculate()" type="button" value="C"></form>
+      <div class="container-fluid button-body">
+        <div class="row">
+          <div class="col-sm">
+            <button class="btn btn-primary" id="reset" onclick="reset()" type="button" value="C"><span>C</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="space" type="button" value=" "></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="space" type="button" value=" "></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="divide" onclick="keyPress('/')" type="button" value="/"><span>/</span></button>
+          </div>
         </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id=" " onclick="calculate()" type="button" value=" "></form>
+        <div class="row">
+          <div class="col-sm">
+            <button class="btn btn-primary" id="seven" onclick="keyPress('7')" type="button" value="7"><span>7</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="eight" onclick="keyPress('8')" type="button" value="8"><span>8</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="nine" onclick="keyPress('9')" type="button" value="9"><span>9</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="multiply" onclick="keyPress('*')" type="button" value="*"><span>*</span></button>
+          </div>
         </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id=" " onclick="calculate()" type="button" value=" "></form>
+        <div class="row">
+          <div class="col-sm">
+            <button class="btn btn-primary" id="four" onclick="keyPress('4')" type="button" value="4"><span>4</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="five" onclick="keyPress('5')" type="button" value="5"><span>5</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="six" onclick="keyPress('6')" type="button" value="6"><span>6</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="subtract" onclick="keyPress('-')" type="button" value="-"><span>-</span></button>
+          </div>
         </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="/" onclick="calculate()" type="button" value="/"></form>
+        <div class="row">
+          <div class="col-sm">
+            <button class="btn btn-primary" id="one" onclick="keyPress('1')" type="button" value="1"><span>1</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="two" onclick="keyPress('2')" type="button" value="2"><span>2</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="three" onclick="keyPress('3')" type="button" value="3"><span>3</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="add" onclick="keyPress('+')" type="button" value="+"><span>+</span></button>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="7" onclick="calculate()" type="button" value="7"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="8" onclick="calculate()" type="button" value="8"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="9" onclick="calculate()" type="button" value="9"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="*" onclick="calculate()" type="button" value="*"></form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="4" onclick="calculate()" type="button" value="4"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="5" onclick="calculate()" type="button" value="5"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="6" onclick="calculate()" type="button" value="6"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="-" onclick="calculate()" type="button" value="-"></form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="1" onclick="calculate()" type="button" value="1"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="2" onclick="calculate()" type="button" value="2"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="3" onclick="calculate()" type="button" value="3"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="+" onclick="calculate()" type="button" value="+"></form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="0" onclick="calculate()" type="button" value="0"></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id=" " onclick="calculate()" type="button" value=" "></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="." onclick="calculate()" type="button" value="."></form>
-        </div>
-        <div class="col-sm">
-          <form><input class="btn btn-primary" id="=" onclick="calculate()" type="button" value="="></form>
+        <div class="row">
+          <div class="col-sm">
+            <button class="btn btn-primary" id="zero" onclick="keyPress('0')" type="button" value="0"><span>0</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="space" type="button" value=" "></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="decimal" onclick="keyPress('.')" type="button" value="."><span>.</span></button>
+          </div>
+          <div class="col-sm">
+            <button class="btn btn-primary" id="equal" onclick="keyPress('=')" type="button" value="="><span>=</span></button>
+          </div>
         </div>
       </div>
     </div>
