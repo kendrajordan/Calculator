@@ -61,6 +61,11 @@ function operator(current_sign) {
         sign = current_sign;
 
     }
+    document.getElementById('/').style.backgroundColor = 'initial';
+    document.getElementById('x').style.backgroundColor = 'initial';
+    document.getElementById('-').style.backgroundColor = 'initial';
+    document.getElementById('+').style.backgroundColor = 'initial';
+    document.getElementById(sign).style.backgroundColor = '#ccc';
 
   console.log('END OF OPERATOR()');
   debug();
@@ -74,7 +79,7 @@ function calculate() {
   second_num = parseFloat(display.innerHTML);
   console.log('BEGINNING OF CALCULATE()');
   debug();
-  
+
 
   var solution;
   var temp_first = first_num.toString();
@@ -121,6 +126,11 @@ function calculate() {
   debug();
   console.log('solution', solution, typeof solution);
 
+
+  document.getElementById('/').style.backgroundColor = 'initial';
+  document.getElementById('x').style.backgroundColor = 'initial';
+  document.getElementById('-').style.backgroundColor = 'initial';
+  document.getElementById('+').style.backgroundColor = 'initial';
   return solution;
 }
 

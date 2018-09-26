@@ -55,6 +55,11 @@ function operator(current_sign) {
     sign = current_sign;
   }
 
+  document.getElementById('/').style.backgroundColor = 'initial';
+  document.getElementById('x').style.backgroundColor = 'initial';
+  document.getElementById('-').style.backgroundColor = 'initial';
+  document.getElementById('+').style.backgroundColor = 'initial';
+  document.getElementById(sign).style.backgroundColor = '#ccc';
   console.log('END OF OPERATOR()');
   debug();
 }
@@ -110,6 +115,10 @@ function calculate() {
   console.log('END OF CALCULATE()');
   debug();
   console.log('solution', solution, typeof solution);
+  document.getElementById('/').style.backgroundColor = 'initial';
+  document.getElementById('x').style.backgroundColor = 'initial';
+  document.getElementById('-').style.backgroundColor = 'initial';
+  document.getElementById('+').style.backgroundColor = 'initial';
   return solution;
 }
 
