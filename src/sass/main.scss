@@ -1,13 +1,15 @@
 // This is the Sass file we edit
 
 // Variables for Bootstrap that we want to change
+$grid-gutter-width: 0;
+
 html, body {
   margin: 0;
   padding: 0;
 }
 
 .container {
-  border: 3px black solid;
+  border: 3px green solid;
   margin: 0;
   padding: 0;
 }
@@ -19,8 +21,27 @@ html, body {
 }
 
 button {
-  margin: auto;
-  padding: auto;
+  width: 100%;
 }
+
+.col-md-3 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.window {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  align-items: center;
+}
+
+#display {
+  padding-right: 5px;
+}
+
 // Import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";

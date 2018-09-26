@@ -15,81 +15,81 @@
   </head>
   <body>
 
-    <div class="container">
+    <div class="container container-body col-md-6">
       <div class="row">
-        <div class="container-fluid" id="display">
-          <output id="display"></output>
+        <div class="container-fluid window">
+          <output id="display">0</output>
         </div>
       </div>
       <div class="container-fluid button-body">
         <div class="row">
-          <div class="col-sm">
-            <button class="btn btn-primary" id="reset" onclick="reset()" type="button" value="C"><span>C</span></button>
+          <div class="col-md-3">
+            <button id="reset" onclick="reset()" type="button" value="C"><span>C</span></button>
           </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="space" type="button" value=" "></button>
+          <div class="col-md-3">
+            <button id="recall" type="button" onclick="keyPress('recall')"><span>Recall</span></button>
           </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="space" type="button" value=" "></button>
+          <div class="col-md-3">
+            <button id="space" type="button" value=" "></button>
           </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="divide" onclick="keyPress('/')" type="button" value="/"><span>/</span></button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <button class="btn btn-primary" id="seven" onclick="keyPress('7')" type="button" value="7"><span>7</span></button>
-          </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="eight" onclick="keyPress('8')" type="button" value="8"><span>8</span></button>
-          </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="nine" onclick="keyPress('9')" type="button" value="9"><span>9</span></button>
-          </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="multiply" onclick="keyPress('*')" type="button" value="*"><span>*</span></button>
+          <div class="col-md-3">
+            <button id="divide" onclick="keyPress('/')" type="button" value="/"><span>/</span></button>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm">
-            <button class="btn btn-primary" id="four" onclick="keyPress('4')" type="button" value="4"><span>4</span></button>
+          <div class="col-md-3">
+            <button id="seven" onclick="keyPress('7')" type="button" value="7"><span>7</span></button>
           </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="five" onclick="keyPress('5')" type="button" value="5"><span>5</span></button>
+          <div class="col-md-3">
+            <button id="eight" onclick="keyPress('8')" type="button" value="8"><span>8</span></button>
           </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="six" onclick="keyPress('6')" type="button" value="6"><span>6</span></button>
+          <div class="col-md-3">
+            <button id="nine" onclick="keyPress('9')" type="button" value="9"><span>9</span></button>
           </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="subtract" onclick="keyPress('-')" type="button" value="-"><span>-</span></button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <button class="btn btn-primary" id="one" onclick="keyPress('1')" type="button" value="1"><span>1</span></button>
-          </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="two" onclick="keyPress('2')" type="button" value="2"><span>2</span></button>
-          </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="three" onclick="keyPress('3')" type="button" value="3"><span>3</span></button>
-          </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="add" onclick="keyPress('+')" type="button" value="+"><span>+</span></button>
+          <div class="col-md-3">
+            <button id="multiply" onclick="keyPress('*')" type="button" value="*"><span>*</span></button>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm">
-            <button class="btn btn-primary" id="zero" onclick="keyPress('0')" type="button" value="0"><span>0</span></button>
+          <div class="col-md-3">
+            <button id="four" onclick="keyPress('4')" type="button" value="4"><span>4</span></button>
           </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="space" type="button" value=" "></button>
+          <div class="col-md-3">
+            <button id="five" onclick="keyPress('5')" type="button" value="5"><span>5</span></button>
           </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="decimal" onclick="keyPress('.')" type="button" value="."><span>.</span></button>
+          <div class="col-md-3">
+            <button id="six" onclick="keyPress('6')" type="button" value="6"><span>6</span></button>
           </div>
-          <div class="col-sm">
-            <button class="btn btn-primary" id="equal" onclick="keyPress('=')" type="button" value="="><span>=</span></button>
+          <div class="col-md-3">
+            <button id="subtract" onclick="keyPress('-')" type="button" value="-"><span>-</span></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <button id="one" onclick="keyPress('1')" type="button" value="1"><span>1</span></button>
+          </div>
+          <div class="col-md-3">
+            <button id="two" onclick="keyPress('2')" type="button" value="2"><span>2</span></button>
+          </div>
+          <div class="col-md-3">
+            <button id="three" onclick="keyPress('3')" type="button" value="3"><span>3</span></button>
+          </div>
+          <div class="col-md-3">
+            <button id="add" onclick="keyPress('+')" type="button" value="+"><span>+</span></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <button id="zero" onclick="keyPress('0')" type="button" value="0"><span>0</span></button>
+          </div>
+          <div class="col-md-3">
+            <button id="space" type="button" value=" "></button>
+          </div>
+          <div class="col-md-3">
+            <button id="decimal" onclick="keyPress('.')" type="button" value="."><span>.</span></button>
+          </div>
+          <div class="col-md-3">
+            <button id="equal" onclick="keyPress('=')" type="button" value="="><span>=</span></button>
           </div>
         </div>
       </div>

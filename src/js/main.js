@@ -1,11 +1,12 @@
 // This is the JavaScript file we edit
 let store = [];
+let result = [];
 
 function keyPress(input) {
   switch (input) {
     case "0":
       store.push(input);
-      document.getElementById("display").innerHTML = store.join("")
+      document.getElementById("display").innerHTML = store.join("");
       break;
     case "1":
       store.push(input);
@@ -49,32 +50,33 @@ function keyPress(input) {
       break;
     case "-":
       store.push(input);
-      document.getElementById("display").innerHTML = store.join("")
+      document.getElementById("display").innerHTML = store.join(""));
       break;
     case "/":
       store.push(input);
-      document.getElementById("display").innerHTML = store.join("")
+      document.getElementById("display").innerHTML = store.join(""));
       break;
     case "*":
       store.push(input);
-      document.getElementById("display").innerHTML = store.join("")
+      document.getElementById("display").innerHTML = store.join(""));
       break;
     case ".":
       store.push(input);
       document.getElementById("display").innerHTML = store.join("")
       break;
     case "=":
+      result.push(eval(store.join("")));
+      console.log(result);
       document.getElementById("display").innerHTML = eval(store.join(""));
       break;
+    case "recall":
+      document.getElementById("display").innerHTML = result.join(", ");
+      break;
+
   }
-
-}
-
-function calculate(store) {
-
 }
 
 function reset() {
   store = [];
-  document.getElementById("display").innerHTML = "";
+  document.getElementById("display").innerHTML = 0;
 }
