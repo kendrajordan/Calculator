@@ -55,9 +55,9 @@ document.addEventListener('keydown', function(event) {
     else if(event.keyCode == 27) {
         blankitout();
     }
-    else if(event.keyCode == 8) {
-        backspacei();
-    }
+  //  else if(event.keyCode == 8) {
+  //      backspacei();
+  //  }
     else if(event.keyCode == 88) {
         multiply();
     }
@@ -316,8 +316,8 @@ console.log(holding);
 
 }
 
-function backspacei() {
-  holding.splice(-1, 1);
-  console.log(holding);
-  display.innerHTML = display.innerHTML.slice(0, -1);
-}
+//function backspacei() {
+//  holding.splice(-1, 1);
+//  console.log(holding);
+//  display.innerHTML = display.innerHTML.slice(0, -1);
+//}
