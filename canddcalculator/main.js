@@ -1,4 +1,4 @@
-function calculator(val, c){
+function calculator(val){
 
 let operators = document.getElementById("operators");
 //below is where each number will be displayed when the corresponding button is pressed
@@ -23,4 +23,8 @@ if (display.textContent == 0){
 } else{
   display.textContent += val;
 }
+ if(val == "C"){
+  display.textContent = 0;
+}
+
 }
