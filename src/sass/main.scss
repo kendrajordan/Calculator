@@ -1,7 +1,7 @@
 // This is the Sass file we edit
 
 // Variables for Bootstrap that we want to change
-
+$body-bg: #DDD;
 
 
 
@@ -13,6 +13,7 @@
     margin:auto;
     border: 1px solid black;
     min-width:20em;
+    background-color: #FFF;
     .row {
         margin:0;
     }
