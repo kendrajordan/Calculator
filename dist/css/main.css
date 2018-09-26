@@ -8613,6 +8613,10 @@ h3 {
 #calc-container {
   width: 50%;
   margin: auto;
+  border: 1px solid black;
+}
+#calc-container .row {
+  margin: 0;
 }
 #calc-container p {
   text-align: center;
@@ -8620,6 +8624,12 @@ h3 {
   margin: 0;
   padding: 0;
   height: 100px;
+  line-height: 100px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#calc-container #display {
+  cursor: default;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 "use strict";
 
+// This is the "use strict";
 // This is the JavaScript file we edit
 var display = document.getElementById('display');
 var first_num = null;
@@ -31,7 +32,6 @@ function clear_display() {
 }
 
 function operator(current_sign) {
-  
   if (first_num == null) {
     first_num = parseFloat(display.innerHTML);
     state = 'ready_second';
@@ -41,6 +41,7 @@ function operator(current_sign) {
     state = 'ready_second';
     sign = current_sign;
   }
+
   console.log('END OF OPERATOR()');
   console.log('first_num', first_num);
   console.log('second_num', second_num);
@@ -53,8 +54,6 @@ function calculate() {
   console.log('first_num', first_num, typeof first_num);
   console.log('second_num', second_num, typeof second_num);
   console.log('sign', sign);
-  
-
   var solution;
   var temp_first = first_num.toString();
   var temp_second = second_num.toString(); //temp_first=temp_first.substring(temp_first.search(/\./)).length;
@@ -82,7 +81,6 @@ function calculate() {
   solution = parseFloat(solution.toFixed(dec_places));
   display.innerHTML = solution;
   state = 'solved';
-
   first_num = solution;
   second_num = null;
   console.log('END OF CALCULATE()');
@@ -90,6 +88,13 @@ function calculate() {
   console.log('second_num', second_num, typeof second_num);
   console.log('sign', sign);
   console.log('solution', solution, typeof solution);
-
   return solution;
+}
+
+function highlight(id) {
+  document.getElementById(id).style.backgroundColor = '#CCC';
+}
+
+function unhighlight(id) {
+  document.getElementById(id).style.backgroundColor = 'initial';
 }

@@ -11,11 +11,21 @@
 #calc-container {
     width: 50%;
     margin:auto;
+    border: 1px solid black;
+    .row {
+        margin:0;
+    }
     p {
         text-align:center;
         border: 1px solid black;
         margin: 0;
         padding: 0;
-        height:100px
+        height:100px;
+        line-height: 100px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    #display {
+        cursor: default;
     }
 }
