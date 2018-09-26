@@ -1,4 +1,75 @@
 // This is the JavaScript file we edit
+
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 48) {
+        zerof();
+    }
+    else if(event.keyCode == 49) {
+        onef();
+    }
+    else if(event.keyCode == 50) {
+        twof();
+    }
+    else if(event.keyCode == 51) {
+        threef();
+    }
+    else if(event.keyCode == 52) {
+        fourf();
+    }
+    else if(event.keyCode == 53) {
+        fivef();
+    }
+    else if(event.keyCode == 54) {
+        sixf();
+    }
+    else if(event.keyCode == 55) {
+        sevenf();
+    }
+    else if(event.keyCode == 56) {
+        eightf();
+    }
+    else if(event.keyCode == 57) {
+        ninef();
+    }
+    else if(event.keyCode == 49) {
+        onef();
+    }
+    else if(event.keyCode == 13) {
+        equals();
+    }
+    else if(event.keyCode == 187) {
+        add();
+    }
+    else if(event.keyCode == 189) {
+        subtract();
+    }
+    else if(event.keyCode == 56) {
+        multiply();
+    }
+    else if(event.keyCode == 191) {
+        divide();
+    }
+    else if(event.keyCode == 190) {
+        decimali();
+    }
+    else if(event.keyCode == 27) {
+        blankitout();
+    }
+    else if(event.keyCode == 8) {
+        backspacei();
+    }
+    else if(event.keyCode == 88) {
+        multiply();
+    }
+});
+
+
+
+
+
+
+
+
 var operators = {
     '+': function(a, b) { return a + b },
     '-': function(a, b) { return a - b },
@@ -243,4 +314,10 @@ function decimali() {
   display.innerHTML += "."
 console.log(holding);
 
+}
+
+function backspacei() {
+  holding.splice(-1, 1);
+  console.log(holding);
+  display.innerHTML = display.innerHTML.slice(0, -1);
 }
