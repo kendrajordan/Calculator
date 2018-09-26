@@ -64,6 +64,16 @@ function operator(current_sign) {
     console.log('BEGINNING OF OPERATOR()');
     debug();
 
+    if (sign != null) {
+      sign = current_sign;
+      document.getElementById('/').style.backgroundColor = 'initial';
+      document.getElementById('x').style.backgroundColor = 'initial';
+      document.getElementById('-').style.backgroundColor = 'initial';
+      document.getElementById('+').style.backgroundColor = 'initial';
+      document.getElementById(sign).style.backgroundColor = '#ccc';
+      return;
+    }
+
     if (calc_state == ERROR) {
 
         clear_display();
