@@ -142,7 +142,12 @@ function calculate() {
 
   if (temp_str.length > 9) {
     console.log('solution', solution);
-    var integer = temp_str.substring(0, temp_str.search(/\./));
+    var integer = temp_str;
+
+    if (temp_str.search(/\./) > -1) {
+      integer = temp_str.substring(0, temp_str.search(/\./));
+    }
+
     console.log('integer', integer);
 
     if (integer.length > 9) {

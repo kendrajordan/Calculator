@@ -153,7 +153,10 @@ function calculate() {
   let temp_str = solution.toString();
   if (temp_str.length > 9) {
     console.log('solution', solution);
-    let integer = temp_str.substring(0, temp_str.search(/\./));
+    let integer = temp_str;
+    if (temp_str.search(/\./) > -1) {
+      integer = temp_str.substring(0, temp_str.search(/\./));
+    } 
     console.log('integer', integer);
     if (integer.length > 9) {
       // Can't fit this number on our display; display ERROR.
