@@ -1,1 +1,110 @@
-<!-- This file will be copied from src, or maybe not -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Our styling, above what Bootstrap provides -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title></title>
+  </head>
+  <body>
+
+  <div class="container container-body col-md-6">
+    <div class="row">
+      <div class="container-fluid window">
+        <output id="display">0</output>
+      </div>
+    </div>
+    <div class="container-fluid button-body">
+    <div class="row">
+      <div class="col-md-3 ">
+        <button id="reset" onclick="reset()"><span>C</span></button>
+      </div>
+      <div class="col-md-3  ">
+        <button id="recall" onclick="calculate('recall')"><span>Recall</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="Delete" onclick="back()"><span>Delete</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="divide"  onclick="calculate('/')"><span>/</span></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3  ">
+          <button id="seven" onclick="calculate('7')"><span>7</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="eight" onclick="calculate('8')"><span>8</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="nine" onclick="calculate('9')"><span>9</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="*" onclick="calculate('*')"><span>*</span></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3  ">
+        <button id="four"  onclick="calculate('4')"><span>4</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="five" onclick="calculate('5')"><span>5</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="six"  onclick="calculate('6')"><span>6</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="minus" onclick="calculate('-')"><span>-</span></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3  ">
+          <button id="one" onclick="calculate('1')"><span>1</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="two" onclick="calculate('2')"><span>2</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="three" onclick="calculate('3')"><span>3</span></button>
+      </div>
+      <div class="col-md-3  ">
+        <button id="plus" onclick="calculate('+')"><span>+</span></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3  ">
+          <button id="zero" onclick="calculate('0')"><span>0</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="space" name="operator" onclick="calculate(' ')" ><span> </span></button>
+      </div>
+      <div class="col-md-3  ">
+        <button id="decimal"name="operator" onclick="calculate('.')" ><span>.</span></button>
+      </div>
+      <div class="col-md-3  ">
+          <button id="equal"name="operator" onclick="calculate('=')"><span>=</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

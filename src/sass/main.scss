@@ -1,1 +1,42 @@
 // This is the Sass file we edit
+
+// Variables for Bootstrap that we want to change
+html,body{
+  margin:0;
+  padding:0;
+}
+.container{
+  border: 3px green solid;
+  margin:0;
+  padding: 0;
+}
+.button-body{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0;
+}
+.col-md-3{
+display: flex;
+justify-content: center;
+padding:0;
+margin: 0;
+width:100%;
+}
+$grid-gutter-width: 0;
+button{
+  width: 100%;
+}
+
+.window{
+  height:40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#display{
+  padding-right:5px;
+}
+
+// Import bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
