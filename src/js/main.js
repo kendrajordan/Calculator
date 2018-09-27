@@ -79,3 +79,7 @@ function reset(){
   store =[];
   document.getElementById("display").innerHTML=0;
 }
+function back(){
+  store.pop();
+  document.getElementById("display").innerHTML=store.join("");
+}
