@@ -72,9 +72,13 @@ function keyPress(input) {
     case "recall":
       document.getElementById("display").innerHTML = result.join(", ");
       break;
-
   }
 }
+
+// function back() {
+//   store.pop();
+//   document.getElementById("display").innerHTML = store.join("");
+// }
 
 function reset() {
   store = [];
