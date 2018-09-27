@@ -28,14 +28,14 @@
 <div class="container calculator-numbers col-sm-6">
           <div id="display" class=”calculator__display”>0</div>
     <div id= "operators" >
-      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">x</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">+</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">-</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">/</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">=</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg" onclick="calculator(*)">x</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg" onclick="calculator(+)">+</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg" onclick="calculator(-)">-</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg" onclick="calculator(/)">/</button></div>
+      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg" onclick="calculator(=)">=</button></div>
     </div>
       <div id="clear" class="grid-item" onclick="calculator('C')"><button type="button" class="btn btn-primary btn-lg">C</button></div>
-      <div class="grid-item"><button type="button" class="btn btn-primary btn-lg">.</button></div>
+      <div class="grid-item" onclick="calculator('.')"><button type="button" class="btn btn-primary btn-lg">.</button></div>
 
 <!-- above are the operator keys-->
     <div id="num-button" >

@@ -20,11 +20,13 @@ let btn9 = document.getElementById("btn9").textContent;*/
 
 if (display.textContent == 0){
   display.textContent = val;
-} else{
+}  else{
   display.textContent += val;
 }
  if(val == "C"){
   display.textContent = 0;
 }
-
+if(val == "."){
+ display.textContent + ".";
+}
 }
