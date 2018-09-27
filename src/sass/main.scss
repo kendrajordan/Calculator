@@ -2,7 +2,7 @@
 
 // Variables for Bootstrap that we want to change
 $body-bg: #DDD;
-
+$function-button: #5FB9FF;
 
 
 // Import bootstrap
@@ -30,5 +30,9 @@ $body-bg: #DDD;
     #display {
         cursor: default;
         font-family: monospace;
+    }
+    .function-button {
+        background-color: $function-button;
+        color: $white;
     }
 }

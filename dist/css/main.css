@@ -8634,5 +8634,9 @@ h3 {
   cursor: default;
   font-family: monospace;
 }
+#calc-container .function-button {
+  background-color: #5FB9FF;
+  color: #fff;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -48,10 +48,10 @@ function clear_display() {
   display_state = READY_FOR_ENTRY;
   first_num = second_num = null;
   sign = null;
-  document.getElementById('/').style.backgroundColor = 'initial';
-  document.getElementById('x').style.backgroundColor = 'initial';
-  document.getElementById('-').style.backgroundColor = 'initial';
-  document.getElementById('+').style.backgroundColor = 'initial';
+  document.getElementById('/').style.backgroundColor = '#5FB9FF';
+  document.getElementById('x').style.backgroundColor = '#5FB9FF';
+  document.getElementById('-').style.backgroundColor = '#5FB9FF';
+  document.getElementById('+').style.backgroundColor = '#5FB9FF';
   console.log('END OF CLEAR_DISPLAY()');
   debug();
 }
@@ -62,10 +62,10 @@ function operator(current_sign) {
 
   if (sign != null) {
     sign = current_sign;
-    document.getElementById('/').style.backgroundColor = 'initial';
-    document.getElementById('x').style.backgroundColor = 'initial';
-    document.getElementById('-').style.backgroundColor = 'initial';
-    document.getElementById('+').style.backgroundColor = 'initial';
+    document.getElementById('/').style.backgroundColor = '#5FB9FF';
+    document.getElementById('x').style.backgroundColor = '#5FB9FF';
+    document.getElementById('-').style.backgroundColor = '#5FB9FF';
+    document.getElementById('+').style.backgroundColor = '#5FB9FF';
     document.getElementById(sign).style.backgroundColor = '#ccc';
     return;
   }
@@ -85,10 +85,10 @@ function operator(current_sign) {
   calc_state = READY_SECOND;
   sign = current_sign;
   display_state = READY_FOR_ENTRY;
-  document.getElementById('/').style.backgroundColor = 'initial';
-  document.getElementById('x').style.backgroundColor = 'initial';
-  document.getElementById('-').style.backgroundColor = 'initial';
-  document.getElementById('+').style.backgroundColor = 'initial';
+  document.getElementById('/').style.backgroundColor = '#5FB9FF';
+  document.getElementById('x').style.backgroundColor = '#5FB9FF';
+  document.getElementById('-').style.backgroundColor = '#5FB9FF';
+  document.getElementById('+').style.backgroundColor = '#5FB9FF';
   document.getElementById(sign).style.backgroundColor = '#ccc';
   console.log('END OF OPERATOR()');
   debug();
@@ -202,10 +202,10 @@ function calculate() {
   console.log('END OF CALCULATE()');
   debug();
   console.log('solution', solution, typeof solution);
-  document.getElementById('/').style.backgroundColor = 'initial';
-  document.getElementById('x').style.backgroundColor = 'initial';
-  document.getElementById('-').style.backgroundColor = 'initial';
-  document.getElementById('+').style.backgroundColor = 'initial';
+  document.getElementById('/').style.backgroundColor = '#5FB9FF';
+  document.getElementById('x').style.backgroundColor = '#5FB9FF';
+  document.getElementById('-').style.backgroundColor = '#5FB9FF';
+  document.getElementById('+').style.backgroundColor = '#5FB9FF';
   return solution;
 }
 
@@ -214,7 +214,8 @@ function highlight(id) {
 }
 
 function unhighlight(id) {
-  document.getElementById(id).style.backgroundColor = 'initial';
+  var color = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '#FFF';
+  document.getElementById(id).style.backgroundColor = color;
 }
 
 function debug() {
@@ -230,8 +231,8 @@ function throw_error() {
   first_num = second_num = sign = null;
   calc_state = ERROR;
   display_state = READY_FOR_ENTRY;
-  document.getElementById('/').style.backgroundColor = 'initial';
-  document.getElementById('x').style.backgroundColor = 'initial';
-  document.getElementById('-').style.backgroundColor = 'initial';
-  document.getElementById('+').style.backgroundColor = 'initial';
+  document.getElementById('/').style.backgroundColor = '#5FB9FF';
+  document.getElementById('x').style.backgroundColor = '#5FB9FF';
+  document.getElementById('-').style.backgroundColor = '#5FB9FF';
+  document.getElementById('+').style.backgroundColor = '#5FB9FF';
 }
